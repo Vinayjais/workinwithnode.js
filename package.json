@@ -1,0 +1,15 @@
+{
+  "name": "hello-word",
+  "version": "1.0.0",
+  "description": "working with node js ",
+  "main": "Fs_new.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon Fs_new.js"
+  },
+  "author": "Vinay Jaiswal",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
