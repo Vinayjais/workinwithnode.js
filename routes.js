@@ -8,9 +8,14 @@ const requestHandler = (req,res) =>{
     const method = req.method;
     
 if( url === '/'){
+
+  const output = fs.readFileSync('msg.txt','utf-8');
+   console.log(output);
   res.write('<html>');
   res.write('<head><title>Enter message </title></head>');
-  res.write('<dody><form action="/message" method ="POST"><input type="text" name="message"><button type="submit">Send</button> </form><body>');
+   
+  
+  res.write(`<body><h4>${output} </h4> <form action="/message" method ="POST"><input type="text" name="message"><button type="submit">Send</button> </form><body>`);
   res.write('</html>');
    return res.end();
 }
